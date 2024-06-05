@@ -39,7 +39,7 @@ public class CustomerController {
         return ResponseEntity.ok(this.service.getCustomers());
     }
 
-    @GetMapping("/exits/${customer-id}")
+    @GetMapping("/exits/{customer-id}")
     public ResponseEntity<Boolean> exitsById(
             @PathVariable("customer-id") String customerId
     ) {
