@@ -1,6 +1,6 @@
-package com.ecommer.customer.common.handler;
+package com.ecommer.customer.error.handler;
 
-import com.ecommer.customer.common.exception.CostumerNotFoundException;
+import com.ecommer.customer.error.exception.CostumerNotFoundException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;

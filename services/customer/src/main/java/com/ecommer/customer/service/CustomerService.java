@@ -1,6 +1,6 @@
 package com.ecommer.customer.service;
 
-import com.ecommer.customer.common.exception.CostumerNotFoundException;
+import com.ecommer.customer.error.exception.CostumerNotFoundException;
 import com.ecommer.customer.model.entity.Address;
 import com.ecommer.customer.model.request.CustomerRequest;
 import com.ecommer.customer.model.response.CustomerResponse;

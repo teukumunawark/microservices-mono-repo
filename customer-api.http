@@ -1,0 +1,134 @@
+###
+# Create Customer
+# Endpoint to create a new customer
+# Method: POST
+# URL: /api/v1/customer
+# Request Body: JSON object containing customer details
+# Response: Returns a success message if customer is created
+# Request Example:
+# {
+#   "firstName": "Mun",
+#   "lastName": "Kha",
+#   "email": "munawar@example.com",
+#   "address": {
+#     "street": "Jalan Lurus",
+#     "hostNumber": "A1",
+#     "postalCode": "12345"
+#   }
+# }
+# Response Example:
+# "Customer created successfully"
+###
+POST http://localhost:8090/api/v1/customer
+Content-Type: application/json
+
+{
+  "firstName": "Mun",
+  "lastName": "Kha",
+  "email": "munawar@example.com",
+  "address": {
+    "street": "Jalan Lurus",
+    "hostNumber": "A1",
+    "postalCode": "12345"
+  }
+}
+
+###
+# Update Customer
+# Endpoint to update an existing customer
+# Method: PUT
+# URL: /api/v1/customer
+# Request Body: JSON object containing updated customer details
+# Response: Returns an accepted status if customer is updated
+# Request Example:
+# {
+#   "id": "customer-id",
+#   "firstName": "Mun",
+#   "lastName": "Kha",
+#   "email": "munawar@example.com",
+#   "address": {
+#     "street": "Jalan Lurus",
+#     "hostNumber": "A1",
+#     "postalCode": "12345"
+#   }
+# }
+###
+PUT http://localhost:8090/api/v1/customer
+Content-Type: application/json
+
+{
+  "id": "6686dac36362ad7420698761",
+  "firstName": "Mun",
+  "lastName": "UPDATE",
+  "email": "munawar@example.com",
+  "address": {
+    "street": "Jalan Lurus",
+    "hostNumber": "A1",
+    "postalCode": "12345"
+  }
+}
+
+###
+# Get All Customers
+# Endpoint to retrieve all customers
+# Method: GET
+# URL: /api/v1/customer
+# Response: Returns a list of customers
+# Response Example:
+# [
+#   {
+#     "id": "1",
+#     "firstName": "Mun",
+#     "lastName": "Kha",
+#     "email": "munawar@example.com",
+#     "address": {
+#       "street": "Jalan Lurus",
+#       "hostNumber": "A1",
+#       "postalCode": "12345"
+#     }
+#   },
+#   ...
+# ]
+###
+GET http://localhost:8090/api/v1/customer
+
+###
+# Check if Customer Exists by ID
+# Endpoint to check if a customer exists by their ID
+# Method: GET
+# URL: /api/v1/customer/exits/{customer-id}
+# Response: Returns true if customer exists, false otherwise
+# Response Example:
+# true
+###
+GET http://localhost:8090/api/v1/customer/exits/6686dac36362ad7420698761
+
+###
+# Get Customer by ID
+# Endpoint to retrieve a customer by their ID
+# Method: GET
+# URL: /api/v1/customer/{customer-id}
+# Response: Returns the customer details
+# Response Example:
+# {
+#   "id": "1",
+#   "firstName": "Mun",
+#   "lastName": "Kha",
+#   "email": "munawar@example.com",
+#   "address": {
+#     "street": "Jalan Lurus",
+#     "hostNumber": "A1",
+#     "postalCode": "12345"
+#   }
+# }
+###
+GET http://localhost:8090/api/v1/customer/6686dac36362ad7420698761
+
+###
+# Delete Customer by ID
+# Endpoint to delete a customer by their ID
+# Method: DELETE
+# URL: /api/v1/customer/{customer-id}
+# Response: Returns an accepted status if customer is deleted
+###
+DELETE http://localhost:8090/api/v1/customer/6686dac36362ad7420698761

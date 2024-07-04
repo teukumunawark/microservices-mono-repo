@@ -1,4 +1,4 @@
-package com.ecommer.customer.common.handler;
+package com.ecommer.customer.error.handler;
 
 import java.util.Map;
 
