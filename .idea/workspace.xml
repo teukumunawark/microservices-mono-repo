@@ -4,36 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a6ed731-85d6-4a0e-b159-d2ef8b33e2f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/microservices-mono-repo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/customer.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/product.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer-api.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/product-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/resources/db/migration/V1__init_database.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/customer/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/services/customer/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/customer/src/main/java/com/ecommer/customer/common/exception/CostumerNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/customer/src/main/java/com/ecommer/customer/error/exception/CostumerNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/customer/src/main/java/com/ecommer/customer/common/handler/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/customer/src/main/java/com/ecommer/customer/error/handler/ErrorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/customer/src/main/java/com/ecommer/customer/common/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/customer/src/main/java/com/ecommer/customer/error/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/customer/src/main/java/com/ecommer/customer/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/customer/src/main/java/com/ecommer/customer/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/customer/src/main/java/com/ecommer/customer/service/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/customer/src/main/java/com/ecommer/customer/service/mapper/CustomerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/discovery/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/services/discovery/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/product/src/main/resources/application.properties" beforeDir="false" />
+    <list default="true" id="5a6ed731-85d6-4a0e-b159-d2ef8b33e2f8" name="Changes" comment="completely product service">
+      <change afterPath="$PROJECT_DIR$/product-api.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/error/exception/ProductPurchaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/error/handle/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/error/handle/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/model/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/model/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/model/request/CreateProductRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/model/request/ProductPurchaseRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/model/response/BaseDataResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/model/response/CreateProductResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/model/response/GetProductResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/model/response/ProductPurchaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/model/response/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/service/CreateProductPurchaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/service/CreateProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/service/GetProductByIdService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/service/GetProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b4b6acf-60a0-4778-b37f-83f2c6f5762c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0b4b6acf-60a0-4778-b37f-83f2c6f5762c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b4b6acf-60a0-4778-b37f-83f2c6f5762c/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0b4b6acf-60a0-4778-b37f-83f2c6f5762c/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b4b6acf-60a0-4778-b37f-83f2c6f5762c/storage_v2/_src_/database/product.78yN7Q.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b4b6acf-60a0-4778-b37f-83f2c6f5762c/storage_v2/_src_/database/product.78yN7Q/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f1a4e8c3-f1ce-40fd-9b06-146c0460da33.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f1a4e8c3-f1ce-40fd-9b06-146c0460da33.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/customer.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/customer.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/product.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/product.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/product-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/product-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/product/src/main/resources/db/migration/V1__init_database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/services/product/src/main/resources/db/migration/V1__init_database.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/services/config-server">
@@ -76,11 +91,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Record" />
+        <option value="Class" />
         <option value="HTTP Request" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -92,9 +115,12 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/teukumunawark/microservices-mono-repo.git&quot;,
-    &quot;accountId&quot;: &quot;7296cd53-2e7a-47e0-8d57-063f90bc609a&quot;
+    &quot;accountId&quot;: &quot;2b6157a7-aa8b-477e-b38b-ce46efc1f6a3&quot;
   }
 }</component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -104,6 +130,9 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2imknkKaehK0QVJcHr4G906wPNv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -112,10 +141,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
     "Gradle.Build config-server.executor": "Run",
     "Gradle.Build customer.executor": "Run",
     "Gradle.Build discovery.executor": "Run",
     "Gradle.Build product.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
     "Gradle.config-server [clean].executor": "Run",
     "Gradle.customer [clean].executor": "Run",
     "Gradle.discovery [clean].executor": "Run",
@@ -123,6 +154,7 @@
     "HTTP Request.customer-api | #1.executor": "Run",
     "HTTP Request.customer-api | #2.executor": "Run",
     "HTTP Request.customer-api | #5.executor": "Run",
+    "HTTP Request.product-api | Create Product.executor": "Run",
     "Kotlin script (Beta).build.gradle.kts.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -130,13 +162,14 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "Spring Boot.ConfigServerApplication.executor": "Run",
     "Spring Boot.CustomerApplication.executor": "Run",
     "Spring Boot.DiscoveryApplication.executor": "Run",
-    "Spring Boot.ProductApplication.executor": "Run",
-    "git-widget-placeholder": "main",
+    "Spring Boot.ProductApplication.executor": "Debug",
+    "git-widget-placeholder": "feature/product-service",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Development/Spring-boot/microservices-mono-repo/services/config-server/build.gradle.kts",
+    "last_opened_file_path": "C:/BNI-Dev/JDK Experimental",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
@@ -148,7 +181,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -161,6 +194,14 @@
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ecommer.product.service" />
+      <recent name="com.ecommer.product.model.request" />
+      <recent name="com.ecommer.product.model.response" />
+      <recent name="com.ecommer.product.repository" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -170,22 +211,15 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.customer-api | #5">
+  <component name="RunManager" selected="HTTP Request.product-api | Create Product">
     <configuration name="customer-api | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/customer-api.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="customer-api | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/customer-api.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="customer-api | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/customer-api.http" index="5" requestIdentifier="#5" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="build.gradle.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="microservices-mono-repo" />
-      <option name="filePath" value="$PROJECT_DIR$/services/discovery/build.gradle.kts" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="product-api | Create Product" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/product-api.http" requestIdentifier="Create Product" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="config-server.main" />
@@ -221,11 +255,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="HTTP Request.product-api | Create Product" />
       <item itemvalue="HTTP Request.customer-api | #1" />
-      <item itemvalue="HTTP Request.customer-api | #2" />
       <item itemvalue="HTTP Request.customer-api | #5" />
-      <item itemvalue="Kotlin script (Beta).build.gradle.kts" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.CustomerApplication" />
       <item itemvalue="Spring Boot.ProductApplication" />
@@ -233,11 +281,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.customer-api | #5" />
-        <item itemvalue="HTTP Request.customer-api | #2" />
-        <item itemvalue="HTTP Request.customer-api | #1" />
+        <item itemvalue="HTTP Request.product-api | Create Product" />
         <item itemvalue="Spring Boot.DiscoveryApplication" />
-        <item itemvalue="Kotlin script (Beta).build.gradle.kts" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="HTTP Request.customer-api | #1" />
+        <item itemvalue="HTTP Request.customer-api | #5" />
       </list>
     </recent_temporary>
   </component>
@@ -260,11 +308,20 @@
       <workItem from="1720103311650" duration="5648000" />
       <workItem from="1720112642931" duration="263000" />
       <workItem from="1720112916073" duration="1072000" />
+      <workItem from="1720160953536" duration="2099000" />
+      <workItem from="1720169809849" duration="38000" />
+      <workItem from="1720169857695" duration="10023000" />
+      <workItem from="1720188848373" duration="3358000" />
+      <workItem from="1720411811681" duration="40000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="completely product service" />
+    <option name="LAST_COMMIT_MESSAGE" value="completely product service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,0 +1,105 @@
+### Create Product
+# Endpoint untuk membuat produk baru
+# Method: POST
+# URL: /api/v1/products
+# Request Body: JSON object yang berisi detail produk
+# Response: Mengembalikan pesan sukses jika produk berhasil dibuat
+# Request Example:
+# {
+#   "id": 1,
+#   "name": "Product Name",
+#   "description": "Product Description",
+#   "availableQuantity": 10.0,
+#   "price": 100.0,
+#   "categoryId": 1
+# }
+# Response Example:
+# {
+#   "id": 1,
+#   "message": "Product created successfully"
+# }
+###
+POST http://localhost:8050/api/v1/products
+Content-Type: application/json
+
+{
+  "name": "Product Name",
+  "description": "Product Description",
+  "availableQuantity": 10.0,
+  "price": 100.0,
+  "categoryId": 1
+}
+
+### Get All Products
+# Endpoint untuk mendapatkan semua produk
+# Method: GET
+# URL: /api/v1/products
+# Response: Mengembalikan daftar produk
+# Response Example:
+# [
+#   {
+#     "id": 1,
+#     "name": "Product Name",
+#     "description": "Product Description",
+#     "availableQuantity": 10.0,
+#     "price": 100.0,
+#     "categoryId": 1,
+#     "categoryName": "Category Name",
+#     "categoryDescription": "Category Description"
+#   }
+# ]
+###
+GET http://localhost:8050/api/v1/products
+
+### Get Product by ID
+# Endpoint untuk mendapatkan produk berdasarkan ID
+# Method: GET
+# URL: /api/v1/products/{product-id}
+# Response: Mengembalikan detail produk
+# Response Example:
+# {
+#   "id": 1,
+#   "name": "Product Name",
+#   "description": "Product Description",
+#   "availableQuantity": 10.0,
+#   "price": 100.0,
+#   "categoryId": 1,
+#   "categoryName": "Category Name",
+#   "categoryDescription": "Category Description"
+# }
+###
+GET http://localhost:8050/api/v1/products/1
+
+### Purchase Products
+# Endpoint untuk membeli produk
+# Method: POST
+# URL: /api/v1/products/purchase
+# Request Body: JSON array yang berisi detail pembelian produk
+# Response: Mengembalikan detail pembelian produk
+# Request Example:
+# [
+#   {
+#     "productId": 1,
+#     "quantity": 2.0
+#   }
+# ]
+# Response Example:
+# [
+#   {
+#     "productId": 1,
+#     "name": "Product Name",
+#     "description": "Product Description",
+#     "price": 100.0,
+#     "quantity": 2.0
+#   }
+# ]
+###
+POST http://localhost:8050/api/v1/products/purchase
+Content-Type: application/json
+
+[
+  {
+    "productId": 1,
+    "quantity": 2.0
+  }
+]
