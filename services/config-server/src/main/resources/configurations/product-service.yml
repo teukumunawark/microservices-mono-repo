@@ -2,31 +2,9 @@ server:
   port: ${SERVER_PORT}
 spring:
   datasource:
-    driver-class-name: org.postgresql.Driver
     url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/product}
     username: ${SPRING_DATASOURCE_USERNAME}
     password: ${SPRING_DATASOURCE_PASSWORD}
-    hikari:
-      connection-timeout: 5000
-      idle-timeout: 600000
-      max-lifetime: 1800000
-      minimumIdle: 2
-      maximum-pool-size: ${SPRING_DATASOURCE_HIKARI_MAXIMUM_POOL_SIZE}
-  jpa:
-    show-sql: true
-    properties:
-      hibernate:
-        format_sql: true
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-    hibernate:
-      ddl-auto: ${SPRING_JPA_HIBERNATE_DDL_AUTO}
-    generate-ddl: false
-    open-in-view: false
   flyway:
-    baseline-on-migrate: ${SPRING_FLYWAY_BASELINE_ON_MIGRATE}
-    enabled: ${SPRING_FLYWAY_ENABLED}
-    baseline-description: ${SPRING_FLYWAY_BASELINE_DESCRIPTION}
-    baseline-version: ${SPRING_FLYWAY_BASELINE_VERSION}
-    locations: ${SPRING_FLYWAY_LOCATIONS}
     user: ${spring.datasource.username}
     password: ${spring.datasource.password}

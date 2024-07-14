@@ -5,7 +5,6 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/services/config-server" />
-        <option name="gradleJvm" value="openjdk-22" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/services/config-server" />
@@ -22,6 +21,14 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/services/customer-service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/services/customer-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/services/discovery" />
         <option name="gradleJvm" value="openjdk-21" />
         <option name="modules">
@@ -31,10 +38,34 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/services/discovery-server" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/services/discovery-server" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/services/order-service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/services/order-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/services/product" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/services/product" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/services/product-service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/services/product-service" />
           </set>
         </option>
       </GradleProjectSettings>
