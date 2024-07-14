@@ -21,6 +21,6 @@ public class FindCustomerOrderService {
                         .paymentMethod(customerOrder.getPaymentMethod())
                         .amount(customerOrder.getTotalAmount())
                         .build())
-                .orElseThrow(() -> new EntityNotFoundException(String.format("No order found with the provided ID: %d", id)));
+                .orElseThrow(() -> new EntityNotFoundException(String.format("No order found with the provided ID: %d", orderId)));
     }
 }
