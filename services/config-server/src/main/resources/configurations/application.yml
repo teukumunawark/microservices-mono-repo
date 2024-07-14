@@ -1,16 +1,44 @@
+spring:
+  cloud.config:
+    override-none: true
+    allow-override: true
+    override-system-properties: false
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      connection-timeout: 5000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      minimumIdle: 2
+      maximum-pool-size: 5
+  jpa:
+    show-sql: true
+    properties.hibernate:
+      format_sql: true
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate
+    generate-ddl: false
+    open-in-view: false
+  flyway:
+    baseline-on-migrate: true
+    enabled: true
+    baseline-description: "init"
+    baseline-version: 0
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
 eureka:
   instance:
     hostname: ${APP_EUREKA_HOST_NAME}
-  client:
-    service-url:
-      defaultZone: ${APP_EUREKA_CLIENT_SERVICE_URL}
+  client.service-url:
+    defaultZone: ${APP_EUREKA_CLIENT_SERVICE_URL}
+
 name:
   value: mikasa
-spring:
-  cloud:
-    config:
-      override-system-properties: false
-management:
-  tracing:
-    sampling:
-      probability: 1.0
+
+management.tracing.sampling:
+  probability: 1.0

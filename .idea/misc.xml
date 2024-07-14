@@ -4,8 +4,12 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/services/config-server" />
     <file type="web" url="file://$PROJECT_DIR$/services/customer" />
+    <file type="web" url="file://$PROJECT_DIR$/services/customer-service" />
     <file type="web" url="file://$PROJECT_DIR$/services/discovery" />
+    <file type="web" url="file://$PROJECT_DIR$/services/discovery-server" />
+    <file type="web" url="file://$PROJECT_DIR$/services/order-service" />
     <file type="web" url="file://$PROJECT_DIR$/services/product" />
+    <file type="web" url="file://$PROJECT_DIR$/services/product-service" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_22" project-jdk-name="22" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
