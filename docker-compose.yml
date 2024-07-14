@@ -94,6 +94,24 @@ services:
       - 1080:1080
       - 1025:1025
 
+  vault:
+    hostname: vault
+    container_name: vault
+    image: hashicorp/vault
+    entrypoint: vault server -config=/vault/config/vault.hcl
+    environment:
+      VAULT_ADDR: "http://0.0.0.0:8200"
+      VAULT_API_ADDR: "http://0.0.0.0:8200"
+    ports:
+      - "8200:8200"
+    cap_add:
+      - IPC_LOCK
+    volumes:
+      - "./conf:/vault/config"
+      - "vault-data:/vault/data"
+    networks:
+      - microservices-net
+
 networks:
   microservices-net:
     driver: bridge
@@ -102,3 +120,8 @@ volumes:
   postgres:
   pgadmin:
   mongo:
+  vault-data:
+    driver: local
+    name: vault-data
+
+
