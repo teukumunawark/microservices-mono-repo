@@ -1,4 +1,4 @@
-package com.ecommer.configserver;
+package com.ecommer.config;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
