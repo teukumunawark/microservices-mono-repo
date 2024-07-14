@@ -1,12 +1,20 @@
 spring:
   profiles:
-    active: native
+    active: native, vault
   application:
     name: config-service
-  cloud:
-    config:
-      server:
-        native:
-          search-locations: classpath:/configurations
+  cloud.config.server:
+    native:
+      search-locations: classpath:/configurations
+    vault:
+      host: localhost
+      port: 8200
+      order: 1
+      kv-version: 1
+      authentication: token
+      profile-separator: '/'
+      backend: backend-service-dev
+      token: hvs.G57Hs2zN8w2fUIgPBvUCwHdy
+      scheme: http
 server:
   port: 8888

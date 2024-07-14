@@ -5,40 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a6ed731-85d6-4a0e-b159-d2ef8b33e2f8" name="Changes" comment="completely product service">
-      <change afterPath="$PROJECT_DIR$/product-api.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/error/exception/ProductPurchaseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/error/handle/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/error/handle/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/model/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/model/entity/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/model/request/CreateProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/model/request/ProductPurchaseRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/model/response/BaseDataResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/model/response/CreateProductResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/model/response/GetProductResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/model/response/ProductPurchaseResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/model/response/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/service/CreateProductPurchaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/service/CreateProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/service/GetProductByIdService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ecommer/product/service/GetProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b4b6acf-60a0-4778-b37f-83f2c6f5762c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0b4b6acf-60a0-4778-b37f-83f2c6f5762c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b4b6acf-60a0-4778-b37f-83f2c6f5762c/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0b4b6acf-60a0-4778-b37f-83f2c6f5762c/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b4b6acf-60a0-4778-b37f-83f2c6f5762c/storage_v2/_src_/database/product.78yN7Q.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b4b6acf-60a0-4778-b37f-83f2c6f5762c/storage_v2/_src_/database/product.78yN7Q/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f1a4e8c3-f1ce-40fd-9b06-146c0460da33.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f1a4e8c3-f1ce-40fd-9b06-146c0460da33.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/customer.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/customer.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/product.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/product.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/vault.hcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-api.http" beforeDir="false" afterPath="$PROJECT_DIR$/curl/customer-api.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-api.http" beforeDir="false" afterPath="$PROJECT_DIR$/curl/product-api.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/customer-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/customer-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/discovery-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/discovery-service.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/product-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/product-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/product/src/main/resources/db/migration/V1__init_database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/services/product/src/main/resources/db/migration/V1__init_database.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,10 +141,10 @@
     "Spring Boot.ConfigServerApplication.executor": "Run",
     "Spring Boot.CustomerApplication.executor": "Run",
     "Spring Boot.DiscoveryApplication.executor": "Run",
-    "Spring Boot.ProductApplication.executor": "Debug",
-    "git-widget-placeholder": "feature/product-service",
+    "Spring Boot.ProductApplication.executor": "Run",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/BNI-Dev/JDK Experimental",
+    "last_opened_file_path": "C:/Development Space/SpringBoot/microservices-mono-repo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
@@ -200,6 +175,12 @@
       <recent name="com.ecommer.product.model.request" />
       <recent name="com.ecommer.product.model.response" />
       <recent name="com.ecommer.product.repository" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Development Space\SpringBoot\microservices-mono-repo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Development Space\SpringBoot\microservices-mono-repo\curl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -281,8 +262,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.product-api | Create Product" />
         <item itemvalue="Spring Boot.DiscoveryApplication" />
+        <item itemvalue="HTTP Request.product-api | Create Product" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="HTTP Request.customer-api | #1" />
         <item itemvalue="HTTP Request.customer-api | #5" />
