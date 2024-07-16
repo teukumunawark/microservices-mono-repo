@@ -1,20 +1,31 @@
 spring:
   profiles:
-    active: native, vault
+    active: git, vault
   application:
-    name: config-service
-  cloud.config.server:
-    native:
-      search-locations: classpath:/configurations
-    vault:
-      host: localhost
-      port: 8200
-      order: 1
-      kv-version: 1
-      authentication: token
-      profile-separator: '/'
-      backend: backend-service-dev
-      token: hvs.G57Hs2zN8w2fUIgPBvUCwHdy
-      scheme: http
+    name: config-server
+  cloud:
+    config:
+      allow-override: true
+      server:
+        vault:
+          host: ${VAULT_HOST:localhost}
+          port: ${VAULT_PORT:8200}
+          order: 1
+          kv-version: 1
+          authentication: token
+          profile-separator: '/'
+          backend: backend-service-dev
+          token: ${VAULT_TOKEN}
+          scheme: ${VAULT_SCHEME:http}
+        git:
+          uri: ${GIT_URL:https://github.com/teukumunawark/microservices-mono-repo}
+          username: ${GIT_USERNAME:teukumunawark}
+          password: ${GIT_PASSWORD}
+          skip-ssl-validation: true
+          default-label: main
+          order: 2
+          search-paths: 'services/config-map'
+
+
 server:
   port: 8888

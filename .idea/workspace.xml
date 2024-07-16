@@ -4,8 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a6ed731-85d6-4a0e-b159-d2ef8b33e2f8" name="Changes" comment="fixed typo">
-      <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/OrderServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/OrderServiceApplication.java" afterDir="false" />
+    <list default="true" id="5a6ed731-85d6-4a0e-b159-d2ef8b33e2f8" name="Changes" comment="add config map to services">
+      <change afterPath="$PROJECT_DIR$/services/payment-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vault-secrets.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b4b6acf-60a0-4778-b37f-83f2c6f5762c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0b4b6acf-60a0-4778-b37f-83f2c6f5762c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/customer-service.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/discovery-server.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/order-service.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/product-service.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/payment-service/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,63 +132,63 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build config-server.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build customer-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build customer.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build discovery-server.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build discovery.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build order-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build product-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build product.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.config-server [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.customer [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.discovery [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.product [clean].executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.customer-api | #1.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.customer-api | #2.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.customer-api | #5.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.product-api | Create Product.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin script (Beta).build.gradle.kts.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CustomerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.DiscoveryApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OrderServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ProductApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/order-service&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Development Space/SpringBoot/microservices-mono-repo/services/product-service/build.gradle.kts&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "Gradle.Build config-server.executor": "Run",
+    "Gradle.Build customer-service.executor": "Run",
+    "Gradle.Build customer.executor": "Run",
+    "Gradle.Build discovery-server.executor": "Run",
+    "Gradle.Build discovery.executor": "Run",
+    "Gradle.Build order-service.executor": "Run",
+    "Gradle.Build product-service.executor": "Run",
+    "Gradle.Build product.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.config-server [clean].executor": "Run",
+    "Gradle.customer [clean].executor": "Run",
+    "Gradle.discovery [clean].executor": "Run",
+    "Gradle.product [clean].executor": "Run",
+    "HTTP Request.customer-api | #1.executor": "Run",
+    "HTTP Request.customer-api | #2.executor": "Run",
+    "HTTP Request.customer-api | #5.executor": "Run",
+    "HTTP Request.product-api | Create Product.executor": "Run",
+    "Kotlin script (Beta).build.gradle.kts.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "Spring Boot.ConfigServerApplication.executor": "Run",
+    "Spring Boot.CustomerApplication.executor": "Run",
+    "Spring Boot.DiscoveryApplication.executor": "Run",
+    "Spring Boot.OrderServiceApplication.executor": "Run",
+    "Spring Boot.ProductApplication.executor": "Run",
+    "git-widget-placeholder": "feature/config-map",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Development Space/SpringBoot/microservices-mono-repo/services/product-service/build.gradle.kts",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;,
-      &quot;mongo&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql",
+      "mongo"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -191,6 +204,7 @@
       <recent name="C:\Development Space\SpringBoot\microservices-mono-repo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Development Space\SpringBoot\microservices-mono-repo\spring-configmap\dev" />
       <recent name="C:\Development Space\SpringBoot\microservices-mono-repo\curl" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -206,7 +220,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Spring Boot.PaymentServiceApplication">
     <configuration name="customer [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -227,9 +241,6 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="customer-api | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/customer-api.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="product-api | Create Product" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/product-api.http" requestIdentifier="Create Product" runType="Run single request">
@@ -269,6 +280,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PaymentServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="payment-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ecommer.payment.PaymentServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ecommer.payment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="product-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ecommer.product.ProductApplication" />
@@ -294,20 +318,20 @@
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Gradle.customer [clean]" />
       <item itemvalue="HTTP Request.product-api | Create Product" />
-      <item itemvalue="HTTP Request.customer-api | #1" />
       <item itemvalue="Spring Boot.OrderServiceApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.CustomerApplication" />
       <item itemvalue="Spring Boot.ProductApplication" />
+      <item itemvalue="Spring Boot.PaymentServiceApplication" />
       <item itemvalue="Spring Boot.DiscoveryApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.DiscoveryApplication" />
+        <item itemvalue="Spring Boot.PaymentServiceApplication" />
         <item itemvalue="Gradle.customer [clean]" />
         <item itemvalue="HTTP Request.product-api | Create Product" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="HTTP Request.customer-api | #1" />
       </list>
     </recent_temporary>
   </component>
@@ -337,6 +361,7 @@
       <workItem from="1720411811681" duration="40000" />
       <workItem from="1720942386986" duration="3759000" />
       <workItem from="1720953897865" duration="7652000" />
+      <workItem from="1721138653770" duration="8907000" />
     </task>
     <task id="LOCAL-00001" summary="add configuration to order service">
       <option name="closed" value="true" />
@@ -370,7 +395,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720965418137</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixed typo">
+      <option name="closed" value="true" />
+      <created>1721138720548</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721138720548</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add config map to services">
+      <option name="closed" value="true" />
+      <created>1721145065856</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721145065856</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,7 +423,8 @@
     <MESSAGE value="add flyway" />
     <MESSAGE value="completely working in order service" />
     <MESSAGE value="fixed typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed typo" />
+    <MESSAGE value="add config map to services" />
+    <option name="LAST_COMMIT_MESSAGE" value="add config map to services" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
