@@ -4,63 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a6ed731-85d6-4a0e-b159-d2ef8b33e2f8" name="Changes" comment="rename all service to add suffix service">
-      <change afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/order-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/OrderServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/common/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/config/KafkaOrderTopicConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/config/RestTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/controller/CustomerOrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/controller/CustomerOrderLineController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/error/exception/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/error/handler/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/error/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/model/entity/CustomerOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/model/entity/CustomerOrderLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/model/enumerated/PaymentMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/model/request/CustomerOrderLineRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/model/request/CustomerOrderRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/model/request/PaymentRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/model/request/PurchaseRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/model/response/CustomerOrderLineResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/model/response/CustomerOrderResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/model/response/CustomerResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/model/response/OrderConfirmation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/model/response/PurchaseResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/repository/CustomerOrderLineRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/repository/CustomerOrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/service/CreateCustomerOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/service/CustomerOrderLineService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/service/FindAllCustomerOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/service/FindCustomerOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/service/integration/CustomerClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/service/integration/PaymentClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/service/integration/ProductClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/service/producer/CustomerOrderProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/resources/db/migration/V1__init_database.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/test/java/com/ecommer/order/OrderServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b4b6acf-60a0-4778-b37f-83f2c6f5762c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0b4b6acf-60a0-4778-b37f-83f2c6f5762c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b4b6acf-60a0-4778-b37f-83f2c6f5762c/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0b4b6acf-60a0-4778-b37f-83f2c6f5762c/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/discovery-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/discovery-server.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/product-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/product-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/discovery-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/discovery-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/product/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/product/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/product/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/product/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/product/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/gradlew.bat" afterDir="false" />
+    <list default="true" id="5a6ed731-85d6-4a0e-b159-d2ef8b33e2f8" name="Changes" comment="fixed typo">
+      <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/OrderServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/ecommer/order/OrderServiceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -391,8 +336,41 @@
       <workItem from="1720188848373" duration="3358000" />
       <workItem from="1720411811681" duration="40000" />
       <workItem from="1720942386986" duration="3759000" />
-      <workItem from="1720953897865" duration="7095000" />
+      <workItem from="1720953897865" duration="7652000" />
     </task>
+    <task id="LOCAL-00001" summary="add configuration to order service">
+      <option name="closed" value="true" />
+      <created>1720965187931</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720965187931</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add flyway">
+      <option name="closed" value="true" />
+      <created>1720965224407</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720965224407</updated>
+    </task>
+    <task id="LOCAL-00003" summary="completely working in order service">
+      <option name="closed" value="true" />
+      <created>1720965348938</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720965348938</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fixed typo">
+      <option name="closed" value="true" />
+      <created>1720965418137</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720965418137</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +378,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="completely product service" />
-    <option name="LAST_COMMIT_MESSAGE" value="completely product service" />
+    <MESSAGE value="add configuration to order service" />
+    <MESSAGE value="add flyway" />
+    <MESSAGE value="completely working in order service" />
+    <MESSAGE value="fixed typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed typo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
