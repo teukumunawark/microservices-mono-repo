@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    url: ${SPRING_DATASOURCE_URL}
+  flyway:
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+  kafka:
+    producer:
+      bootstrap-servers: ${KAFKA_PRODUCER_BOOTSTRAP_SERVER}
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring.json.type.mapping: com.ecommer.payment.model.request.PaymentNotificationRequest
+application:
+  config:
+    product-url: http://localhost:8222/api/v1/products
+server:
+  port: 8060
