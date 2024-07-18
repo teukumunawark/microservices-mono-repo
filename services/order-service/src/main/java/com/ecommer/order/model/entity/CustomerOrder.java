@@ -53,5 +53,5 @@ public class CustomerOrder {
 
     @LastModifiedDate
     @Column(insertable = false)
-    private LocalDateTime updateTime;
+    private LocalDateTime updatedTime;
 }
