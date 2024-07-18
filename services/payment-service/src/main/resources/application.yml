@@ -1,10 +1,5 @@
 spring:
   application:
     name: payment-service
-  datasource:
-    username: mikasa
-    password: mikasa
-    url: jdbc:postgresql://localhost:5432/payment
-  flyway:
-    user: ${spring.datasource.username}
-    password: ${spring.datasource.password}
+  config:
+    import: optional:configserver:http://localhost:8888
