@@ -6,10 +6,10 @@ spring:
       database: ${SPRING_DATA_MONGODB_DATABASE:email}
   kafka:
     consumer:
-      group-id: paymentGroup.orderGroup
+      group-id: paymentGroup,orderGroup
       properties:
         spring.json.trusted.package: "*"
-        spring.json.type.mapping: orderConfirmation:com.ecommer.email.model.dto, paymentConfirmation:com.ecommer.email.model.dto
+        spring.json.type.mapping: orderConfirmation:com.ecommer.email.model.dto.OrderConfirmation, paymentConfirmation:com.ecommer.email.model.dto.PaymentConfirmation
   mail:
     username: ${SPRING_MAIL_USERNAME:mikasa}
     password: ${SPRING_MAIL_PASSWORD:mikasa}
