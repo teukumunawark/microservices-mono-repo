@@ -1,8 +1,8 @@
 spring:
   data:
-    host: ${SPRING_DATA_MONGODB_HOST}
-    port: ${SPRING_DATA_MONGODB_PORT}
-    authentication-database: ${SPRING_DATA_MONGODB_AUTHENTICATION_DATABASE}
+    host: ${SPRING_DATA_MONGODB_HOST:localhost}
+    port: ${SPRING_DATA_MONGODB_PORT:27017}
+    authentication-database: ${SPRING_DATA_MONGODB_AUTHENTICATION_DATABASE:admin}
   datasource:
     driver-class-name: org.postgresql.Driver
     hikari:

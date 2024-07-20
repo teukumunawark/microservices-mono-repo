@@ -1,10 +1,10 @@
 server:
-  port: ${SERVER_PORT}
+  port: ${SERVER_PORT:8050}
 spring:
   datasource:
     url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/product}
-    username: ${SPRING_DATASOURCE_USERNAME}
-    password: ${SPRING_DATASOURCE_PASSWORD}
+    username: ${SPRING_DATASOURCE_USERNAME:mikasa}
+    password: ${SPRING_DATASOURCE_PASSWORD:mikasa}
   flyway:
     user: ${spring.datasource.username}
     password: ${spring.datasource.password}
