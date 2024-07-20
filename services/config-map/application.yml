@@ -1,8 +1,8 @@
 spring:
-  cloud.config:
-    override-none: true
-    allow-override: true
-    override-system-properties: false
+  data:
+    host: ${SPRING_DATA_MONGODB_HOST}
+    port: ${SPRING_DATA_MONGODB_PORT}
+    authentication-database: ${SPRING_DATA_MONGODB_AUTHENTICATION_DATABASE}
   datasource:
     driver-class-name: org.postgresql.Driver
     hikari:
@@ -30,7 +30,26 @@ spring:
       bootstrap-servers: localhost:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-
+    consumer:
+      bootstrap-servers: localhost:9092
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+  cloud.config:
+    override-none: true
+    allow-override: true
+    override-system-properties: false
+  mail:
+    host: localhost
+    port: 1025
+    properties:
+      mail:
+        smtp.trust: "*"
+        auth: true
+        starttls.enabled: true
+        connectiontimeout: 5000
+        timeout: 3000
+        writetimeout: 5000
 eureka:
   instance:
     hostname: ${APP_EUREKA_HOST_NAME}
