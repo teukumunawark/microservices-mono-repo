@@ -9,7 +9,7 @@ spring:
       group-id: paymentGroup.orderGroup
       properties:
         spring.json.trusted.package: "*"
-        spring.json.type.mapping: ...
+        spring.json.type.mapping: orderConfirmation:com.ecommer.email.model.dto, paymentConfirmation:com.ecommer.email.model.dto
   mail:
     username: ${SPRING_MAIL_USERNAME}
     password: ${SPRING_MAIL_PASSWORD}
