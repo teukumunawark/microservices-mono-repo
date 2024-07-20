@@ -1,5 +1,6 @@
 package com.ecommer.email.consumer;
 
+import com.ecommer.email.model.dto.OrderConfirmation;
 import com.ecommer.email.model.dto.PaymentConfirmation;
 import com.ecommer.email.model.entity.Notification;
 import com.ecommer.email.model.enumerated.NotificationType;
@@ -19,24 +20,43 @@ import java.time.LocalDateTime;
 @RequiredArgsConstructor
 public class NotificationsConsumer {
 
-    private final EmailService emailService;
-    private final EmailRepository repository;
+	private final EmailService emailService;
+	private final EmailRepository repository;
 
-    @KafkaListener(topics = "payment-notification-topic")
-    public void consumePaymentSuccessNotifications(PaymentConfirmation paymentConfirmation) throws MessagingException {
-        log.info("Consuming the message from payment-topic Topic:: %s", paymentConfirmation);
-        repository.save(Notification.builder()
-                .type(NotificationType.PAYMENT_CONFIRMATION)
-                .notificationDate(LocalDateTime.now())
-                .paymentConfirmation(paymentConfirmation)
-                .build()
-        );
-        var customerName = StringUtils.concat(paymentConfirmation.customerFirstname(), " ", paymentConfirmation.customerLastname());
-        emailService.sendPaymentSuccessEmail(
-                paymentConfirmation.customerEmail(),
-                customerName,
-                paymentConfirmation.amount(),
-                paymentConfirmation.orderReference()
-        );
-    }
+	@KafkaListener(topics = "payment-topic")
+	public void consumePaymentSuccessNotifications(PaymentConfirmation paymentConfirmation) throws MessagingException {
+		log.info("Consuming the message from payment-topic Topic:: %s", paymentConfirmation);
+		repository.save(Notification.builder()
+				.type(NotificationType.PAYMENT_CONFIRMATION)
+				.notificationDate(LocalDateTime.now())
+				.paymentConfirmation(paymentConfirmation)
+				.build()
+		);
+		var customerName = StringUtils.concat(paymentConfirmation.customerFirstname(), " ", paymentConfirmation.customerLastname());
+		emailService.sendPaymentSuccessEmail(
+				paymentConfirmation.customerEmail(),
+				customerName,
+				paymentConfirmation.amount(),
+				paymentConfirmation.orderReference()
+		);
+	}
+
+	@KafkaListener(topics = "order-topic")
+	public void consumeOrderSuccessNotifications(OrderConfirmation orderConfirmation) throws MessagingException {
+		log.info("Consuming the message from order-topic Topic:: %s", orderConfirmation);
+		repository.save(Notification.builder()
+				.type(NotificationType.ORDER_CONFIRMATION)
+				.notificationDate(LocalDateTime.now())
+				.orderConfirmation(orderConfirmation)
+				.build()
+		);
+		var customerName = StringUtils.concat(orderConfirmation.customer().firstname() + " ", orderConfirmation.customer().lastname());
+		emailService.sendOrderSuccessEmail(
+				orderConfirmation.customer().email(),
+				customerName,
+				orderConfirmation.totalAmount(),
+				orderConfirmation.orderReference(),
+				orderConfirmation.products()
+		);
+	}
 }
