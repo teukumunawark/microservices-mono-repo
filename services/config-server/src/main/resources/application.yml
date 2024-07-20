@@ -15,12 +15,12 @@ spring:
           authentication: token
           profile-separator: '/'
           backend: backend-service-dev
-          token: ${VAULT_TOKEN}
+          token: ${VAULT_TOKEN:hvs.QNuvr1HyDQ5VHZkNMKCQCIxa}
           scheme: ${VAULT_SCHEME:http}
         git:
           uri: ${GIT_URL:https://github.com/teukumunawark/microservices-mono-repo}
           username: ${GIT_USERNAME:teukumunawark}
-          password: ${GIT_PASSWORD}
+          password: ${GIT_PASSWORD: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}
           skip-ssl-validation: true
           default-label: main
           order: 2
