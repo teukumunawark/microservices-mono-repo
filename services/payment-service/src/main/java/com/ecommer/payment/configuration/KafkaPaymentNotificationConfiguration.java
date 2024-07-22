@@ -11,7 +11,7 @@ public class KafkaPaymentNotificationConfiguration {
     @Bean
     public NewTopic paymentNotificationTopic() {
         return TopicBuilder
-                .name("payment-notifications-topic")
+                .name("payment-topic")
                 .build();
     }
 }

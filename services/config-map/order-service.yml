@@ -11,11 +11,8 @@ spring:
       spring.json.type.mapping: orderConfirmation:com.ecommer.order.model.response.OrderConfirmation
 application:
   config:
-    customer-url: http://localhost:8222/api/v1/customers
+    customer-url: http://:localhost8222/api/v1/customers
     payment-url: http://localhost:8222/api/v1/payments
     product-url: http://localhost:8222/api/v1/products
 server:
   port: 8070
-
-
-
