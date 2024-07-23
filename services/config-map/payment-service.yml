@@ -11,7 +11,7 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       properties:
-        spring.json.type.mapping: com.ecommer.payment.model.request.PaymentNotificationRequest
+        spring.json.type.mapping: paymentConfirmation:com.ecommer.payment.model.request.PaymentNotificationRequest
 application:
   config:
     product-url: http://localhost:8222/api/v1/products
