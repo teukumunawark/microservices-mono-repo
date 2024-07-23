@@ -1,9 +1,8 @@
 package com.ecommer.email.model.enumerated;
 
 public enum PaymentMethod {
-    PAYPAL,
+    DANA,
+    GOPAY,
+    BNI,
     CREDIT_CARD,
-    VISA,
-    MASTER_CARD,
-    BITCOIN
 }
