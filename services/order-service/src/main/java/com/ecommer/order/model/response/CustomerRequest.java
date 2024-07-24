@@ -3,7 +3,7 @@ package com.ecommer.order.model.response;
 import lombok.Builder;
 
 @Builder
-public record CustomerResponse(
+public record CustomerRequest(
         String id,
         String firstname,
         String lastname,
