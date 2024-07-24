@@ -11,8 +11,8 @@ public class CustomerMapper {
     public Customer toCustomer(CustomerRequest request) {
         return Customer.builder()
                 .id(request.id())
-                .firstName(request.firstName())
-                .lastName(request.lastName())
+                .firstname(request.firstname())
+                .lastname(request.lastname())
                 .email(request.email())
                 .address(Address.builder()
                         .street(request.address().street())
@@ -25,8 +25,8 @@ public class CustomerMapper {
     public CustomerResponse fromCostumer(Customer customer) {
         return new CustomerResponse(
                 customer.getId(),
-                customer.getFirstName(),
-                customer.getLastName(),
+                customer.getFirstname(),
+                customer.getLastname(),
                 customer.getEmail(),
                 CustomerResponse.AddressResponse.builder()
                         .street(customer.getAddress().getStreet())

@@ -29,11 +29,11 @@ public class CustomerService {
     public void updateCustomer(CustomerRequest request) {
         var costumer = repository.findById(request.id())
                 .orElseThrow(() -> new CostumerNotFoundException(format("Customer with id %s not found", request.id())));
-        if (StringUtils.isNotBlank(request.firstName())) {
-            costumer.setFirstName(request.firstName());
+        if (StringUtils.isNotBlank(request.firstname())) {
+            costumer.setFirstName(request.firstname());
         }
-        if (StringUtils.isNotBlank(request.lastName())) {
-            costumer.setLastName(request.lastName());
+        if (StringUtils.isNotBlank(request.lastname())) {
+            costumer.setLastName(request.lastname());
         }
         if (StringUtils.isNotBlank(request.email())) {
             costumer.setEmail(request.email());
