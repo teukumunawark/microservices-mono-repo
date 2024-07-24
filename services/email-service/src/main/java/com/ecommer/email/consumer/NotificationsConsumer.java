@@ -32,7 +32,7 @@ public class NotificationsConsumer {
 				.paymentConfirmation(paymentConfirmation)
 				.build()
 		);
-		var customerName = StringUtils.concat(paymentConfirmation.customerFirstname(), " ", paymentConfirmation.customerLastname());
+		var customerName = StringUtils.concat(paymentConfirmation.customerFirstName(), " ", paymentConfirmation.customerLastName());
 		emailService.sendPaymentSuccessEmail(
 				paymentConfirmation.customerEmail(),
 				customerName,
