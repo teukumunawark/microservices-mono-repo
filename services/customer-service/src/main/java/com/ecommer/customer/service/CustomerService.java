@@ -30,10 +30,10 @@ public class CustomerService {
         var costumer = repository.findById(request.id())
                 .orElseThrow(() -> new CostumerNotFoundException(format("Customer with id %s not found", request.id())));
         if (StringUtils.isNotBlank(request.firstname())) {
-            costumer.setFirstName(request.firstname());
+            costumer.setFirstname(request.firstname());
         }
         if (StringUtils.isNotBlank(request.lastname())) {
-            costumer.setLastName(request.lastname());
+            costumer.setLastname(request.lastname());
         }
         if (StringUtils.isNotBlank(request.email())) {
             costumer.setEmail(request.email());
